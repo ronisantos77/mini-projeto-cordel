@@ -14,7 +14,7 @@
 
 }
 body {
-    background-color: aquamarine;
+    background-color: white;
 }
 header {
     background-color: black;
@@ -38,11 +38,34 @@ header a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-size: 1.1em;
 }
 section p {
     text-align: justify;
-    margin: 10px;
+    margin-top: 60px;
     font-family: var(--fonte-p);
-    font-size:  4vw;
+    font-size:  3.6vw;
     padding: 40px;
+
+
+}
+footer {
+    background-color: black;
+    padding: 10px;
+}
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 1.1em;
+    text-decoration: none;
+    
+}
+footer a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+footer a:hover {
+    text-decoration: underline;
 }
