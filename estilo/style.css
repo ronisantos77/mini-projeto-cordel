@@ -11,6 +11,7 @@
 :root {
     --texto-header:'Passion One', cursive;
     --texto-body:'Sriracha', cursive;
+    --texto-padrao: verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -23,6 +24,7 @@
 html, body {
     min-height: 100vh;
     background-color: lightgray;
+    font-family: var(--texto-padrao);
 }
 
 header {
@@ -49,14 +51,15 @@ header a, footer a {
 
 header a:hover, footer a:hover {
     text-decoration: underline;
+    font-size: 1.1em;
 }
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-family: var(--texto-body);
-    
+    font-family: var(--texto-body); 
+    font-size: 4vw;  
 }
 
 section.normal {
@@ -70,9 +73,25 @@ section.imagem {
 }
 
 section.imagem > p {
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.253);
-    width: 400px;
+    
 
+}
+#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 footer {
@@ -80,4 +99,5 @@ footer {
     text-align: center;
     color: white;
     padding: 10px;
+    
 }
