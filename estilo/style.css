@@ -68,19 +68,21 @@ section.normal {
 section.imagem {
     background-color:rgb(58, 57, 57) ;
     color: white;
+    box-shadow: inset 6px 6px 10px rgba(0, 0, 0, 0.418);
 }
 
 section.imagem > p {
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.253);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
+    text-shadow: 2px 2px px black;
     
 
 }
 #img01 {
     background-image: url(../imagens/background001.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right center;
     background-size: cover;
     background-attachment: fixed;
 }
