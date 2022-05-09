@@ -1,91 +1,83 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
-* {
-    margin: 0px;
-    padding: 0px;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+
+
 :root {
-
-    --fonte-h1:'Passion One', cursive;
-    --fonte-p:'Sriracha', cursive ;
-
+    --texto-header:'Passion One', cursive;
+    --texto-body:'Sriracha', cursive;
 }
-body {
-    background-color: white;
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
 }
+
+html, body {
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
 header {
     background-color: black;
-    padding: 45px;
+    text-align: center;
+    color: white;
 }
 header h1 {
-    color: white;
-    font-size: 10vw;
-    font-family: var(--fonte-h1);
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--texto-header);
     font-weight: normal;
-    text-align: center;
-    
+    font-size: 10vw;
 }
 header p {
-    font-size:1.5vw ;
-    color: white;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
 }
-header a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-section p {
-    text-align: justify;
-    margin-top: 60px;
-    font-family: var(--fonte-p);
-    font-size:  3.6vw;
-    padding: 40px;
-}
-section.quadrado p{
-    padding: 60px;
-    line-height: 2em;
-    text-align: left;
-    margin: -20px;
-    color: white;
-}   
-#img01{
-    background-image: url(imagens/background001.jpg);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-#img02 {
-    background-image: url(imagens/background002.jpg);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: cover;
-    background-attachment: fixed;
 
-}
-footer {
-    background-color: black;
-    padding: 10px;
-}
-footer p {
-    color: white;
-    text-align: center;
-    font-size: 1.1em;
+header a, footer a {
     text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--texto-body);
     
 }
-footer a{
-    text-decoration: none;
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color:rgb(58, 57, 57) ;
     color: white;
-    font-weight: bold;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.253);
+    width: 400px;
 
 }
-footer a:hover {
-    text-decoration: underline;
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
