@@ -46,8 +46,20 @@ section p {
     font-family: var(--fonte-p);
     font-size:  3.6vw;
     padding: 40px;
-
-
+}
+section.quadrado  p{
+    padding: 80px;
+    line-height: 2em;
+    text-align: left;
+    margin: 0px;
+    color: white;
+}   
+#img01{
+    background-image: url(imagens/background001.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 footer {
     background-color: black;
